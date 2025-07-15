@@ -1,0 +1,392 @@
+body {
+  background: linear-gradient(to bottom right, #1d0975, #0f0547);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.navbar .nav-link.active {
+  color: #00ffd5;
+  border-bottom: 2px solid #00ffd5;
+}
+
+.hero {
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero .highlight {
+  color: #ffffff;
+  border-bottom: 3px solid #00ffd5;
+}
+
+.btn-success {
+  background-color: #00cc88;
+  border: none;
+}
+
+.watch-video .circle-play {
+  background: transparent;
+  border: 2px solid #00cc88;
+  color: #00cc88;
+  border-radius: 50%;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+
+.phone-mockup img {
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+li.nav-item {
+  padding: 0px 10px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: 435px;
+  animation: up-down .9s ease-in-out infinite alternate;
+}
+
+
+.text-primary {
+  color: #001973 !important;
+}
+
+.info-box {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.feature-box {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #001973;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* Step-by-step animation */
+.col-6:nth-child(1) .animate-fade-in {
+  animation-delay: 0.1s;
+}
+
+.col-6:nth-child(2) .animate-fade-in {
+  animation-delay: 0.2s;
+}
+
+.col-6:nth-child(3) .animate-fade-in {
+  animation-delay: 0.3s;
+}
+
+.col-6:nth-child(4) .animate-fade-in {
+  animation-delay: 0.4s;
+}
+
+.col-6:nth-child(5) .animate-fade-in {
+  animation-delay: 0.5s;
+}
+
+.col-6:nth-child(6) .animate-fade-in {
+  animation-delay: 0.6s;
+}
+
+.col-6:nth-child(7) .animate-fade-in {
+  animation-delay: 0.7s;
+}
+
+.col-6:nth-child(8) .animate-fade-in {
+  animation-delay: 0.8s;
+}
+
+.col-6:nth-child(9) .animate-fade-in {
+  animation-delay: 0.9s;
+}
+
+.col-6:nth-child(10) .animate-fade-in {
+  animation-delay: 1.0s;
+}
+
+.col-6:nth-child(11) .animate-fade-in {
+  animation-delay: 1.5s;
+}
+
+.col-6:nth-child(12) .animate-fade-in {
+  animation-delay: 1.9s;
+}
+
+/* Animation Class */
+.animate-fade-up {
+  animation: fade-up .8s ease-in-out both;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes up-down {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.stats-section {
+  background-color: #f4f6fd;
+}
+
+.stats-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 15px;
+  position: relative;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.stats-box .icon-wrapper {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.stats-box .stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 30px;
+  color: #444;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stats-box:nth-child(1) .animate-fade-in {
+  animation-delay: 0.1s;
+}
+
+.stats-box:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.stats-box:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.stats-box:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.animate-fade-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 1s ease forwards;
+}
+
+.animate-fade-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s ease forwards;
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.img-beati {
+  max-width: 100%;
+  height: 500px;
+  animation: up-down .9s ease-in-out infinite alternate;
+}
+
+section {
+  padding: 60px 0;
+  scroll-margin-top: 100px;
+  overflow: clip;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  position: relative;
+}
+
+.gallery-item>a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery-img {
+  max-width: 100%;
+  height: 250px;
+  animation: up-down 0.9s ease-in-out infinite alternate;
+  transition: 0.4s ease;
+}
+
+.gallery-item:hover .gallery-img {
+  animation: none;
+  transform: scale(1.1);
+}
+
+@keyframes up-down {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.team-section h2 {
+  color: #001f7f;
+}
+
+.team-card {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.social-links i {
+  margin: 0 5px;
+  cursor: pointer;
+  color: #6c757d;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links i:hover {
+  color: #001f7f;
+}
+
+.faq-section {
+  background-color: #f4f6fd !important;
+}
+
+.faq-section h2 {
+  font-weight: 700;
+}
+
+.accordion-button {
+  background-color: #fff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #f8f9fa;
+}
+
+.contact-section {
+  background: #f9f9ff;
+}
+
+.text-primary {
+  color: #000066;
+}
+
+.footer {
+  background-color: #0b0657;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  span {
+    font-size: 12px;
+}
+}
